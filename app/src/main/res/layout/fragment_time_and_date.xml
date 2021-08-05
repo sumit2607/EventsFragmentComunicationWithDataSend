@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeAndDateFragment">
+
+    <EditText
+        android:id="@+id/etstartdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Event Start Date " />
+
+    <EditText
+        android:id="@+id/etenddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etstartdate"
+        android:layout_margin="20dp"
+        android:hint="Event End Date " />
+
+    <EditText
+        android:id="@+id/etstarttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etenddate"
+        android:layout_margin="20dp"
+        android:hint="Event Start Time " />
+
+
+    <EditText
+        android:id="@+id/etendtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etstarttime"
+        android:layout_margin="20dp"
+        android:hint="Event End Time " />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etendtime"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="Go to PriceDetailsFragment" />
+
+
+</RelativeLayout>
